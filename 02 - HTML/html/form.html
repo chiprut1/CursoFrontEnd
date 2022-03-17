@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+</head>
+<body>
+    
+    <img src="../img/logo.jpg" alt="logo Pasteles LaunchX" align="right">
+    <h1>Pedidos</h1>
+	<p>Por favor haz tu pedido</p>
+
+    <!-- Formulario -->
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombreCompleto">Nombre Completo:</label>
+        <input type="text" name="nombreCompleto" id="nombreCompleto" class="nombreCompleto" required size="50">
+        <br><br>
+        
+        <label for="direccion">Dirección:</label>
+        <input type="text" name="direccion" id="direccion" class="datos" required size="50">
+        <br><br>
+
+        <label for="email">Correo Electronico:</label>
+        <input type="email" name="email" id="email" class="datos" required size="50">
+        <br><br>
+
+        <label for="telefono">Telefono:</label>
+        <input type="tel" name="telefono" id="telefono" class="datos" required maxlength="10">
+        <br><br>
+
+        <label for="entrega">Fecha Entrega:</label>
+        <input type="datetime-local" name="entrega" id="entrega" class="datos" required>
+        <br><br>
+
+        <label for="descripcion">Describe tu pastel, ¿como lo quieres?:</label><br>
+        <textarea name="descripcion" id="descripcion" rows="3"></textarea>
+        <br><br>
+
+
+        <h2 class="titulo block">Selecciona el Tipo de pastel</h2>
+        <input type="checkbox" name="tresLeches" id="tresLeches" value="tresLeches">
+        <label for="tresLeches">Tres Leches</label><br>
+
+        <input type="checkbox" name="quesoZarzamora" id="quesoZarzamora" value="quesoZarzamora">
+        <label for="quesoZarzamora">Queso con Zarzamora</label><br>
+
+        <input type="checkbox" name="tiramisu" id="tiramisu" value="tiramisu">
+        <label for="tiramisu">Tiramisu</label><br>
+
+        <input type="checkbox" name="cheaseCake" id="cheaseCake" value="cheaseCake">
+        <label for="cheaseCake">New York Cheescake</label><br>
+
+        <input type="checkbox" name="zanahoria" id="zanahoria" value="zanahoria">
+        <label for="zanahoria">Pastel Zanahoria</label><br>
+
+        <input type="checkbox" name="ganache" id="ganache" value="ganache">
+        <label for="ganache">Ganache Chocolate</label><br>
+
+        <input type="checkbox" name="mostachonFresa" id="mostachonFresa" value="mostachonFresa">
+        <label for="mostachonFresa">Mostachon de Fresa</label><br>
+
+        <input type="checkbox" name="tripleChoco" id="tripleChoco" value="tripleChoco">
+        <label for="tripleChoco">Triple Chocolate</label><br>
+
+        <h2 class="titulo block">Decoraciones</h2>
+
+        <input type="checkbox" name="sencilla" id="sencilla" value="sencilla">
+        <label for="sencilla">Decoracion Sencilla</label><br>
+
+        <input type="checkbox" name="frutas" id="frutas" value="frutas">
+        <label for="frutas">Decoracion con Frutas</label><br>
+
+        <input type="checkbox" name="flores" id="flores" value="flores">
+        <label for="flores">Decoracion con Flores</label><br>
+
+        <input type="checkbox" name="unicornio" id="unicornio" value="unicornio">
+        <label for="unicornio">Decoracion Unicornio</label><br>
+
+        <button type="submit">enviar</button>
+
+        <button type="reset">borrar</button>
+    </form>
+
+</body>
+</html>
